@@ -1,0 +1,49 @@
+<svg id="Lag_1" data-name="Lag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 413 221">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 29.45px;
+        font-family: ShreeDev0714, "Shree Devanagari 714";
+        letter-spacing: 0.2em;
+      }
+
+      .cls-2 {
+        font-size: 6.76px;
+        font-family: ShreeDev0714-Bold, "Shree Devanagari 714";
+        font-weight: 700;
+        letter-spacing: 0.2em;
+      }
+
+      .cls-3 {
+        font-size: 30.03px;
+        letter-spacing: 0.2em;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        fill: #eda822;
+      }
+    </style>
+  </defs>
+  <title>Tegnebræt 4</title>
+  <text class="cls-1" transform="translate(158.43 112.26)">BACIO</text>
+  <text class="cls-2" transform="translate(189.94 125.56) scale(0.92 1)">CIBO E VINO<tspan class="cls-3" x="53.96" y="0"> </tspan></text>
+  <rect x="193.64" y="70.24" width="13.67" height="16.17"/>
+  <rect x="216.93" y="78.57" width="16.21" height="7.83"/>
+  <rect x="195.55" y="74.41" width="1.59" height="5.17"/>
+  <rect class="cls-4" x="195.87" y="74.91" width="1.91" height="5.83"/>
+  <rect class="cls-4" x="199.36" y="74.91" width="1.27" height="5.83"/>
+  <rect class="cls-4" x="202.54" y="74.91" width="1.91" height="5.83"/>
+  <polygon points="200.64 74.57 192.37 70.24 200.64 65.91 208.9 70.24 200.64 74.57"/>
+  <rect x="215.34" y="78.24" width="19.07" height="0.5" transform="translate(449.76 156.98) rotate(180)"/>
+  <rect x="216.29" y="77.74" width="17.17" height="0.5"/>
+  <rect x="217.26" y="77.14" width="15.55" height="0.55"/>
+  <rect x="218.21" y="76.64" width="13.66" height="0.6"/>
+  <rect x="218.89" y="76.24" width="11.75" height="0.67"/>
+  <rect x="200.32" y="61" width="0.26" height="6.07"/>
+  <rect x="200.39" y="61.11" width="0.17" height="4.77" transform="translate(263.97 -136.99) rotate(90)"/>
+  <rect class="cls-5" x="209.22" y="80.15" width="6.26" height="6.26"/>
+</svg>

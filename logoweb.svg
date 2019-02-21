@@ -1,0 +1,59 @@
+<svg id="Lag_1" data-name="Lag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 373 306">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 80px;
+        letter-spacing: 0.2em;
+      }
+
+      .cls-1, .cls-2 {
+        font-family: ShreeDev0714, "Shree Devanagari 714";
+      }
+
+      .cls-2 {
+        font-size: 18.35px;
+        letter-spacing: 0.2em;
+      }
+
+      .cls-3 {
+        font-size: 81.56px;
+        letter-spacing: 0.2em;
+      }
+
+      .cls-4 {
+        fill: #05141f;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        fill: #eda822;
+      }
+    </style>
+  </defs>
+  <title>Tegnebræt 3</title>
+  <text class="cls-1" transform="translate(37.34 193.65)">BACIO</text>
+  <text class="cls-2" transform="translate(110.73 229.79) scale(0.92 1)">CIBO E VINO<tspan class="cls-3" x="149.27" y="0"> </tspan></text>
+  <rect x="160.13" y="74.09" width="37.13" height="43.91"/>
+  <rect class="cls-4" x="197.2" y="93.1" width="8.63" height="24.9"/>
+  <rect x="222.51" y="96.73" width="44.03" height="21.27"/>
+  <rect x="165.31" y="85.41" width="4.32" height="14.03"/>
+  <rect class="cls-5" x="166.17" y="86.77" width="5.18" height="15.84"/>
+  <rect class="cls-5" x="175.67" y="86.77" width="3.45" height="15.84"/>
+  <rect class="cls-5" x="184.3" y="86.77" width="5.18" height="15.84"/>
+  <polygon points="179.12 85.86 156.67 74.09 179.12 62.32 201.57 74.09 179.12 85.86"/>
+  <rect x="218.2" y="95.82" width="51.8" height="1.36" transform="translate(488.2 193) rotate(180)"/>
+  <rect x="220.79" y="94.46" width="46.62" height="1.36"/>
+  <rect x="223.4" y="92.84" width="42.25" height="1.5"/>
+  <rect x="225.99" y="91.49" width="37.1" height="1.62"/>
+  <rect x="227.83" y="90.39" width="31.92" height="1.81"/>
+  <rect x="178.26" y="49" width="0.7" height="16.49"/>
+  <rect x="178.46" y="49.29" width="0.45" height="12.95" transform="translate(234.45 -122.93) rotate(90)"/>
+  <rect class="cls-6" x="125" y="87" width="19.13" height="31"/>
+  <rect class="cls-6" x="206" y="101" width="17" height="17"/>
+  <rect class="cls-4" x="144" y="93.1" width="16" height="24.9"/>
+  <rect x="116.2" y="74" width="8.8" height="44"/>
+  <rect class="cls-4" x="99" y="101" width="17" height="17"/>
+</svg>

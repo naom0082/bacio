@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bacio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .menu {
+            text-align: center;
+            margin-bottom: 3vw;
+
+
+        }
+
+        .filter {
+
+            font-family: Lucida Calligraphy;
+            padding: 1vw 1.5vw 1vw 1.5vw;
+            border: solid 0.1vw #343333;
+            height: 3vw;
+            width: 12vw;
+            margin: 3.5vw;
+
+
+        }
+
+        #liste {
+            border: 1px solid #cecece;
+            background-color: #05131F;
+            padding: inherit;
+
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Lucida Calligraphy;
+            font-size: 4em;
+
+        }
+
+        span {
+            text-align: center;
+            font-family: Lucida Calligraphy;
+            font-size: 3em;
+
+
+        }
+
+        h2 {
+            text-align: center;
+            font-family: Lucida Calligraphy;
+            color: rgba(255, 249, 249, 0.56);
+
+
+        }
+
+
+        h3 {
+            text-align: center;
+            font-family: Lucida Calligraphy;
+            font-size: 2em;
+            color: white;
+
+        }
+
+        p {
+            text-align: center;
+            font-family: Lucida Calligraphy;
+            color: white;
+
+
+        }
+
+        .valgt {
+
+            background-color: #EDA822;
+            border: none;
+
+        }
+
+        #popup img {
+            width: 50%;
+
+
+        }
+
+        img {
+            width: 100%;
+
+
+        }
+
+        #liste {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+        }
+
+        #popup {
+
+            background-color: #e5e5be;
+            display: none;
+            text-align: center;
+            position: absolute;
+            margin: auto;
+            padding: auto;
+            top: 32vw;
+            width: 100%;
+
+
+        }
+
+        #indhold {
+
+            background-color: #e5e5be;
+            margin: auto;
+            padding-right: 15vw;
+            padding-left: 15vw;
+            padding-bottom: 5vw;
+
+
+        }
+
+        #luk {
+            box-sizing: border-box;
+            text-align: right;
+            padding-right: 3em;
+
+
+
+        }
+
+        #luk button {
+            font-size: 1.5em;
+            padding-top: 2vw;
+            background-color: #e5e5be;
+            color: white;
+
+        }
+
+        button {
+
+            border: none;
+
+        }
+
+        .navigation-bar {
+            width: 100%;
+            height: 190px;
+            font-family: Lucida Calligraphy;
+            margin-bottom: 5vw;
+
+
+        }
+
+        .logo {
+            display: inline-block;
+            vertical-align: top;
+            width: 300px;
+            height: 300px;
+            margin-right: 20px;
+            margin-left: 20px;
+
+        }
+
+        .navigation-bar>a {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 90px;
+            height: 110px;
+            line-height: 80px;
+            margin-top: 110px;
+            margin-left: 50px;
+            text-decoration: none;
+            color: black;
+            font-size: 0.8em;
+        }
+
+        .yellow {
+            display: block;
+            text-align: center;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .yellow>span {
+            position: relative;
+            display: inline-block;
+        }
+
+        .yellow>span:before,
+        .yellow>span:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 10vw;
+            height: 0.2vw;
+            background: #EDA822;
+        }
+
+        .yellow>span:before {
+            right: 100%;
+            margin-right: 15px;
+        }
+
+        .yellow>span:after {
+            left: 100%;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div id="popup">
+        <div id="luk"><button>X</button></div>
+        <div id="indhold"></div>
+
+    </div>
+
+    <header>
+
+        <nav class="navigation-bar">
+            <img class="logo" src="logoweb.svg">
+            <a href="forside.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="#">Wine</a>
+            <a href="#">Contact</a>
+            <a href="#">Join us for dinner!</a>
+        </nav>
+
+    </header>
+
+
+
+    <overskrift>
+        <div class="yellow"><span>Menu</span></div>
+
+    </overskrift>
+
+
+    <div class="menu">
+        <button class="filter" data-hold="alle">Tutti</button>
+        <button class="filter" data-hold="antipasti">Antipasti</button>
+        <button class="filter" data-hold="mains">Piatti Tipici</button>
+        <button class="filter" data-hold="dolce">Dolce</button>
+        <button class="filter" data-hold="bevande">Bevande</button>
+    </div>
+
+
+    <main>
+        <div id="liste"></div>
+
+    </main>
+
+    <script>
+        let retter = [];
+        let filter = "alle";
+
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            let dest = document.querySelector("#liste");
+            let temp = document.querySelector("template");
+
+            async function getJson() {
+                let jsonData = await fetch("https://mandalskeawebspace.dk/claude_php/clean_up_spreadsheet.php?id=1tcf0OBfBEj-FeGHY4C5HFeeqKBuK_J-aajPeVXm1hOM");
+                retter = await jsonData.json();
+                visRetter();
+            }
+
+            function visRetter() {
+                dest.innerHTML = "";
+                retter.forEach(eachRetter => {
+                    if (filter == "alle" || filter == eachRetter.kategori) {
+
+                        let template =
+                            `<article class "#liste">
+<div class="vis"><h2>${eachRetter.navn}</h2>
+<img src="pngbacio/${eachRetter.billede}.png" alt="${eachRetter.navn}">
+<p>${eachRetter.kort}</p>
+<p>Pris - ${eachRetter.pris}</p><br><br>
+
+    </article>`;
+                        dest.insertAdjacentHTML("beforeend", template);
+
+                        dest.lastElementChild.addEventListener("click", åbn);
+
+
+                        function åbn() {
+                            document.querySelector("#indhold").innerHTML =
+                                `<article class="retter">
+<h3>${eachRetter.navn}</h3>
+<img src="pngbacio/${eachRetter.billede}.png" alt="${eachRetter.navn}">
+
+
+<p>${eachRetter.lang} </p>
+<p>Pris - ${eachRetter.pris} </p>
+    </article>`;
+                            document.querySelector("#popup").style.display = "block";
+
+                        }
+                    }
+
+
+                })
+            }
+
+            document.querySelector("#luk button").addEventListener("click", () => {
+
+                document.querySelector("#popup").style.display = "none";
+
+            })
+
+            //function vispersoner slut
+            document.querySelectorAll(".filter").forEach(elm => {
+                elm.addEventListener("click", filtrering);
+            })
+
+            function filtrering() {
+                filter = this.getAttribute("data-hold");
+                document.querySelector("h2").textContent = this.textContent;
+                document.querySelectorAll(".filter").forEach(elm => {
+                    elm.classList.remove("valgt");
+                })
+                this.classList.add("valgt");
+
+                visRetter();
+
+            }
+
+            getJson()
+        }
+    </script>
+
+
+</body>
+
+</html>

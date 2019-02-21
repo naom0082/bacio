@@ -1,0 +1,253 @@
+[{
+    "id": 1,
+    "kategori": "antipasti",
+    "navn": "Bresaola e fichi bruciati",
+    "pris": "89 kr",
+    "kort": "Un antipasto leggero e fresco: bresaola con fichi bruciati nella ricetta di Rosanna Marziale",
+    "lang": "Un antipasto leggero e fresco: bresaola con fichi bruciati nella ricetta di Rosanna Marziale",
+    "oprindelse": "italien",
+    "billede": "bresaola"
+}, {
+    "id": 2,
+    "kategori": "antipasti",
+    "navn": "Di non solo pane vive l\u2019uomo",
+    "pris": "95 kr",
+    "kort": "La semplice \"panzanella\" in sfera di pane",
+    "lang": "La Ricetta di Pietro Leemann \"Di non solo pane vive l'uomo\" \u00e8 \nl'occasione per rivisitare la semplice \"panzanella\" in sfera di pane con\n un cuore piccante al wasabi.",
+    "oprindelse": "italien",
+    "billede": "nonsono"
+}, {
+    "id": 3,
+    "kategori": "antipasti",
+    "navn": "Zuppa di cozze ",
+    "pris": "70 kr",
+    "kort": "Zuppa di cozze nel latte di mozzarella nera",
+    "lang": "La ricetta di Rosanna Marziale per una Zuppa di Cozze nel latte di \nMozzarella nera, tratta dal libro di Italian Gourmet \"Bufala\" ",
+    "oprindelse": "italien",
+    "billede": "zuppa"
+}, {
+    "id": 4,
+    "kategori": "antipasti",
+    "navn": "La Bruschetta perfetta",
+    "pris": "110 kr",
+    "kort": "La Bruschetta perfetta secondo Renato Bosco",
+    "lang": "Le dosi e gli ingredienti per la Bruschetta perfetta, secondo l'estro di Renato Bosco",
+    "oprindelse": "italien",
+    "billede": "bruschetta "
+}, {
+    "id": 5,
+    "kategori": "antipasti",
+    "navn": "Tonno Marinato",
+    "pris": "120 kr",
+    "kort": "Tonno \u201cpinna gialla\u201d marinato con olio extravergine d\u2019oliva e basilico",
+    "lang": "la Ricetta del tonno \"pinna gialla\" marinato con olio extravergine \nd'oliva e basilico purea di finocchio, marmellata di pompelmo e polvere \ndi liquirizia di Riccardo Monco",
+    "oprindelse": "italien",
+    "billede": "tonno"
+}, {
+    "id": 6,
+    "kategori": "antipasti",
+    "navn": "Nizzarda di tonno",
+    "pris": "120 kr",
+    "kort": "Nizzarda di tonno fresco con uova di quaglia",
+    "lang": "La ricetta originale dell'insalata Nizzarda di Tonno Fresco con Uova di Quaglia di Vito Mollica. Un piatto ricercato e fresco, ideale per un brunch o un picnic di grandissima qualit\u00e0.",
+    "oprindelse": "italien",
+    "billede": "nizzarda"
+}, {
+    "id": 7,
+    "kategori": "antipasti",
+    "navn": "Simbua fritta",
+    "pris": "110 kr",
+    "kort": "Simbua fritta alla campidanese",
+    "lang": "La ricetta tradizionale sarda della Simbua Fritta alla Campidanese di Alberto Sanna, giovane chef promessa della cucina di Sardegna",
+    "oprindelse": "italien",
+    "billede": "simbua"
+}, {
+    "id": 8,
+    "kategori": "antipasti",
+    "navn": "Raviolo di carne",
+    "pris": "160 kr",
+    "kort": "Raviolo di carne al pomodoro e capperi fritti con salsa al bianco d\u2019uovo e acciuga",
+    "lang": "Una meravigliosa ricetta di ravioli di carne al pomodoro e capperi fritti, arricchita da salsa al bianco d'uovo e acciuga. Un nuovo modo di servire la carne con semplicit\u00e0 e ricercatezza. Ricetta di Enzo Pett\u00e8",
+    "oprindelse": "italien",
+    "billede": "raviolo"
+}, {
+    "id": 9,
+    "kategori": "mains",
+    "navn": "Agnolotti di polenta",
+    "pris": "210 kr",
+    "kort": "Agnolotti di polenta e intingolo di lumache con pane alle erbe",
+    "lang": "La ricetta di Riccardo Monco per gli agnolotti di polenta con intingolo di lumache e pane alle erbe",
+    "oprindelse": "italien",
+    "billede": "agnolotti"
+}, {
+    "id": 10,
+    "kategori": "mains",
+    "navn": "Ravioli di zucca",
+    "pris": "220 kr",
+    "kort": "Ravioli di zucca arrosto con ostriche, scalogni e coriandolo",
+    "lang": "La Ricetta dei Ravioli di Zucca e Ostriche di Andrea Provenzani",
+    "oprindelse": "italien",
+    "billede": "raviolizucca"
+}, {
+    "id": 11,
+    "kategori": "mains",
+    "navn": "Tortellini con panna",
+    "pris": "250 kr",
+    "kort": "Tortellini con panna e tartufo nero",
+    "lang": "Un primo robusto e tradizionale. La Ricetta dei Tortellini con Panna e Tartufo Nero di Vito Mollica, con le descrizioni dei procedimenti, le dosi, i passaggi per realizzare pasta e farcia.",
+    "oprindelse": "italien",
+    "billede": "tortellini"
+}, {
+    "id": 12,
+    "kategori": "mains",
+    "navn": "Spaghetti all'Olio",
+    "pris": "300 kr",
+    "kort": "Gli Spaghetti all\u2019Olio toscano Igp, Parmigiano e pepe",
+    "lang": "Semplicit\u00e0 ed eleganza nella tradizione italiana. Gli Spaghetti all'Olio Toscano IGP di Marco Stabile.",
+    "oprindelse": "italien",
+    "billede": "spaghettiolio"
+}, {
+    "id": 13,
+    "kategori": "mains",
+    "navn": "Panino di frittata di spaghetti ",
+    "pris": "290 kr",
+    "kort": "Panino di Frittata di Spaghetti e Mozzarella",
+    "lang": "Un panino tradizionale, goloso e soddisfacente. La frittata di spaghetti fritti con mozzarella di Bufala di Rosanna Marziale",
+    "oprindelse": "italien",
+    "billede": "panino"
+}, {
+    "id": 14,
+    "kategori": "mains",
+    "navn": "Spaghetti carbonara",
+    "pris": "280 kr",
+    "kort": "La Carbonara di Ezio Santin",
+    "lang": "Scopriamo una variante della Carbonara nella ricetta di Ezio Santin disponibile su Italian Gourmet nelle dosi e nei procedimenti",
+    "oprindelse": "italien",
+    "billede": "spaghetticabonara"
+}, {
+    "id": 15,
+    "kategori": "mains",
+    "navn": "Spaghetti al Pomodoro",
+    "pris": "210 kr",
+    "kort": "Spaghetti al Pomodoro a regola d\u2019arte di Sergio Mei",
+    "lang": "Scopri una ricetta semplice e italiana come gli spaghetti al pomodoro ma nell'esecuzione perfetta di un grande della cucina come Sergio Mei",
+    "oprindelse": "italien",
+    "billede": "spaghettipomodoro"
+}, {
+    "id": 16,
+    "kategori": "mains",
+    "navn": "Filindeus",
+    "pris": "200 kr",
+    "kort": "Filindeus con primizie, pecorino e brodo di pecora",
+    "lang": "Una ricetta di Sergio Mei dal sapore tradizionale: Filindeus con primizie, pecorino e brodo di pecora.",
+    "oprindelse": "italien",
+    "billede": "filindeus"
+}, {
+    "id": 17,
+    "kategori": "mains",
+    "navn": "Tagliatelle",
+    "pris": "180 kr",
+    "kort": "Tagliatelle ai carciofi e scampi",
+    "lang": "A cura di Ezio Santin la Ricetta delle tagliatelle con carciofi e scampi",
+    "oprindelse": "italien",
+    "billede": "taglietelle"
+}, {
+    "id": 18,
+    "kategori": "mains",
+    "navn": "Fettuccine di pane",
+    "pris": "170 kr",
+    "kort": "Fettuccine di pasta di pane al tartufo nero",
+    "lang": "La ricetta delle fettuccine in pasta di pane al tartufo. Una prelibatezza di Enrico Bartolini, tratto dal libro \"Pasta\" edito da Italian Gourmet",
+    "oprindelse": "italien",
+    "billede": "fettuccini"
+}, {
+    "id": 19,
+    "kategori": "mains",
+    "navn": "Pollo Valdarnese",
+    "pris": "160 kr",
+    "kort": "Pollo valdarnese alla cacciatora",
+    "lang": "La Ricetta del Pollo valdarnese alla cacciatora secondo la ricetta di Vito Mollica",
+    "oprindelse": "italien",
+    "billede": "pollo"
+}, {
+    "id": 20,
+    "kategori": "mains",
+    "navn": "Tartare di manzo",
+    "pris": "140 kr",
+    "kort": "Tartare di manzo di razza calvana",
+    "lang": "La ricetta e il procedimento per realizzare una fresca tartare di manzo di razza calvana, con i suggerimenti dello chef Vito Mollica",
+    "oprindelse": "italien",
+    "billede": "tartare"
+}, {
+    "id": 21,
+    "kategori": "dolce",
+    "navn": "Tortelli alla ricotta",
+    "pris": "60 kr",
+    "kort": "Tortelli alla Ricotta di Iginio Massari",
+    "lang": "Succulenti tortelli ripieni alla ricotta nella versione di Iginio Massari. L'ideale per un Carnevale golosissimo",
+    "oprindelse": "italien",
+    "billede": "tortelli"
+}, {
+    "id": 22,
+    "kategori": "dolce",
+    "navn": "Sci\u00f9 sci\u00f9",
+    "pris": "90 kr",
+    "kort": "Un dolce perfetto",
+    "lang": "Una golosa pasta bign\u00e8 con burro di Bufala campana, grazie alla ricetta di Rosanna Marziale",
+    "oprindelse": "italien",
+    "billede": "sciusciu"
+}, {
+    "id": 23,
+    "kategori": "dolce",
+    "navn": "La Ricetta",
+    "pris": "80 kr",
+    "kort": "La Ricetta del Gelato al Panettone",
+    "lang": "Un tocco fresco al tuo Natale? Ecco l'idea di Alberto Marchetti in questa ricetta davvero interessante",
+    "oprindelse": "italien",
+    "billede": "laricetta"
+}, {
+    "id": 24,
+    "kategori": "dolce",
+    "navn": "Carazze",
+    "pris": "70 kr",
+    "kort": "Carezze di mandorle e amarene di Salvatore De Riso",
+    "lang": "a Ricetta di un dolce stupendo firmata Salvatore De Riso: la \"carezza\" di mandorle e amarene. Profumi del Sud e una sferza di cioccolato fondente e briciole di meringa. Indubbiamente un dolce \"comfort\" da provare subito.",
+    "oprindelse": "italien",
+    "billede": "carezzeamarena"
+}, {
+    "id": 25,
+    "kategori": "bevande",
+    "navn": "Birre",
+    "pris": "45-80 kr",
+    "kort": "Un selezione di birre",
+    "lang": "Moretti, Tenute Collesi, Birrificio Messina, Menabrea e Peroni  ",
+    "oprindelse": "italien",
+    "billede": "birra"
+}, {
+    "id": 26,
+    "kategori": "bevande",
+    "navn": "Vino",
+    "pris": "80-220 kr",
+    "kort": "Un selezione di vini",
+    "lang": "Antale, Marcato, D'angelo, Podere Casanova, San Cassino e Vigneti Radica ",
+    "oprindelse": "italien",
+    "billede": "vino"
+}, {
+    "id": 27,
+    "kategori": "bevande",
+    "navn": "Drinks",
+    "pris": "95-110 kr",
+    "kort": "Un selezione di drinks ",
+    "lang": "Aperol spritz, Gin&tonic, Dark&Stormy, Martini",
+    "oprindelse": "italien",
+    "billede": "spritz"
+}, {
+    "id": 28,
+    "kategori": "bevande",
+    "navn": "Caffe",
+    "pris": "20-60 kr",
+    "kort": "Un selezione di caffe",
+    "lang": "Espresso, Caf\u00e9 latte, Cappucino, Cortado e Machiato",
+    "oprindelse": "italien",
+    "billede": "caffe "
+}]
