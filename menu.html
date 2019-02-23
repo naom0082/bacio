@@ -5,12 +5,14 @@
     <title>Bacio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
     <style>
         .menu {
             text-align: center;
             margin-bottom: 3vw;
-
-
+            display: flex;
+            flex-wrap: wrap;
         }
 
         .filter {
@@ -18,17 +20,24 @@
             font-family: Lucida Calligraphy;
             padding: 1vw 1.5vw 1vw 1.5vw;
             border: solid 0.1vw #343333;
-            height: 3vw;
-            width: 12vw;
+            height: 6vh;
+            width: 8vw;
             margin: 3.5vw;
+            flex-basis: 300px;
+            flex-grow: 1;
+
 
 
         }
 
         #liste {
+
+            display: flex;
+            flex-wrap: wrap;
             border: 1px solid #cecece;
-            background-color: #05131F;
+            background-color: rgb(5, 19, 31);
             padding: inherit;
+            font-size: 0.3em;
 
         }
 
@@ -87,6 +96,8 @@
 
         img {
             width: 100%;
+
+
         }
 
         #liste {
@@ -143,43 +154,128 @@
 
         }
 
-        .navigation-bar {
-            width: 100%;
-            height: 190px;
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+
+        .navbar {
+            font-size: 1.2em;
+
+
+
+        }
+
+        .main-nav {
+            list-style-type: none;
+            display: none;
+            position: absolute;
+            background-color: white;
+            z-index: 1;
+        }
+
+        .nav-links,
+        .logo {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
             font-family: Lucida Calligraphy;
-            margin-bottom: 5vw;
+
+        }
+
+        .main-nav li {
+            text-align: center;
+            display: inline-block;
+            vertical-align: top;
+            height: 90px;
+            margin-left: 40vw;
+            text-decoration: none;
+            color: black;
+
+
 
 
         }
 
         .logo {
-            display: inline-block;
-            vertical-align: top;
-            width: 300px;
-            height: 300px;
-            margin-right: 20px;
-            margin-left: 20px;
+
+            width: 100px;
+            height: 100px;
+            margin-left: 10vw;
+
 
         }
 
-        .navigation-bar>a {
-            display: inline-block;
-            vertical-align: top;
-            margin-right: 90px;
-            height: 110px;
-            line-height: 80px;
-            margin-top: 110px;
-            margin-left: 50px;
-            text-decoration: none;
-            color: black;
-            font-size: 0.8em;
+        .navbar-toggle {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+            color: rgba(0, 0, 0, 0.44);
+            font-size: 24px;
+            margin-top: 5vw;
+            margin-right: 4vw;
         }
+
+        .active {
+            display: block;
+        }
+
+
+        @media screen and (min-width: 768px) {
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 0;
+                height: 250px;
+                align-items: center;
+
+            }
+
+            .main-nav {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                margin-left: 25vw;
+                margin-top: 6vw;
+            }
+
+            .main-nav li {
+                margin: 5vw;
+            }
+
+            .nav-links {}
+
+            .logo {
+                position: absolute;
+                z-index: 2;
+                margin-top: 7vw;
+                margin: 5vw;
+                width: 300px;
+                height: 300px;
+
+
+            }
+
+            .navbar-toggle {
+                display: none;
+            }
+
+            .logo:hover,
+            .nav-links:hover {
+                color: rgba(255, 255, 255, 1);
+            }
+        }
+
+
 
         .yellow {
             display: block;
             text-align: center;
             overflow: hidden;
             white-space: nowrap;
+
         }
 
         .yellow>span {
@@ -206,6 +302,70 @@
             left: 100%;
             margin-left: 15px;
         }
+
+        @media screen and (min-width: 768px) {
+
+
+
+            .yellow {
+                display: block;
+                text-align: center;
+                overflow: hidden;
+                white-space: nowrap;
+                margin-top: 8vw;
+
+            }
+
+            .yellow>span {
+                position: relative;
+                display: inline-block;
+            }
+
+            .yellow>span:before,
+            .yellow>span:after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                width: 10vw;
+                height: 0.2vw;
+                background: #EDA822;
+            }
+
+            .yellow>span:before {
+                right: 100%;
+                margin-right: 15px;
+            }
+
+            .yellow>span:after {
+                left: 100%;
+                margin-left: 15px;
+            }
+
+        }
+
+        @media screen and (min-width: 1920px) {
+
+
+            .menu {
+                text-align: center;
+                margin-bottom: 3vw;
+                width: 100%;
+
+
+            }
+
+            .filter {
+
+                font-family: Lucida Calligraphy;
+                padding: 1vw 1.5vw 1vw 1.5vw;
+                border: solid 0.1vw #191919;
+                height: 6vh;
+
+            }
+
+
+
+        }
     </style>
 </head>
 
@@ -220,15 +380,31 @@
 
     <header>
 
-        <nav class="navigation-bar">
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-align-justify"></i>
+            </span>
             <img class="logo" src="logoweb.svg">
-            <a href="forside.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="#">Wine</a>
-            <a href="#">Contact</a>
-            <a href="#">Join us for dinner!</a>
-        </nav>
+            <ul class="main-nav" id="js-menu">
 
+
+                <li>
+                    <a href="forside.html" class="nav-links">Home</a>
+                </li>
+                <li>
+                    <a href="menu.html" class="nav-links">Menu</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links">Wine</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links">Contact</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links">Join us for dinner!</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
 
@@ -254,6 +430,20 @@
     </main>
 
     <script>
+        let mainNav = document.getElementById('js-menu');
+
+        let navBarToggle = document.getElementById('js-navbar-toggle');
+
+
+        navBarToggle.addEventListener('click', function() {
+
+            mainNav.classList.toggle('active');
+
+        });
+
+
+
+
         let retter = [];
         let filter = "alle";
 

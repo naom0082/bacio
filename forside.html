@@ -6,75 +6,350 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
 
 <style>
+    img {
+        width: 100%;
+
+    }
+
+    h1 {
+        text-align: center;
+        font-family: Lucida Calligraphy;
+        font-size: 3.5em;
+
+    }
+
+    h2 {
+        text-align: center;
+        font-family: Lucida Calligraphy;
+        font-size: 1.8em;
+
+    }
+
+
+    h3 {
+        text-align: center;
+        font-family: Lucida Calligraphy;
+        font-size: 1.4em;
+
+    }
+
+
+    p {
+        text-align: center;
+        font-family: Lucida Calligraphy;
+        font-size: 1em;
+
+    }
+
+
     .cover {
 
         width: 100%;
 
     }
 
-    .navigation-bar {
-        width: 100%;
-        height: 190px;
+    .navbar {
+        font-size: 1.2em;
+
+    }
+
+    .main-nav {
+        list-style-type: none;
+        display: none;
+
+        background-color: white;
+        text-align: center;
+        padding-left: 30vw;
+        margin-bottom: 20vh;
+
+    }
+
+    .nav-links,
+    .logo {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
         font-family: Lucida Calligraphy;
-        margin-bottom: 5vw;
+        margin: 2vw;
+
+
+    }
+
+    .main-nav li {
+        text-align: center;
+        display: inline-block;
+        vertical-align: top;
+        height: 110px;
+        margin-top: 12vw;
+        text-decoration: none;
+        color: black;
+
     }
 
     .logo {
-        display: inline-block;
-        vertical-align: top;
-        width: 300px;
-        height: 300px;
-        margin-right: 20px;
-        margin-left: 20px;
+
+        width: 100px;
+        height: 100px;
+        margin-left: 10vw;
+
+
 
     }
 
-    .navigation-bar>a {
+    .navbar-toggle {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        cursor: pointer;
+        color: rgba(0, 0, 0, 0.44);
+        font-size: 24px;
+        margin-top: 5vw;
+        margin-right: 4vw;
+    }
+
+    .active {
+        display: block;
+    }
+
+
+    @media screen and (min-width: 1920px) {
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 0;
+            height: 250px;
+            align-items: center;
+
+        }
+
+        .main-nav {
+            display: flex;
+            flex-direction: row;
+
+            margin-top: 6vw;
+        }
+
+        .main-nav li {}
+
+        .nav-links {
+
+            padding: 2vw;
+        }
+
+        .logo {
+            position: absolute;
+            margin-left: 6vw;
+            width: 300px;
+            height: 300px;
+
+
+
+        }
+
+        .navbar-toggle {
+            display: none;
+
+        }
+
+        .logo:hover,
+        .nav-links:hover {
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+
+    .citat {
+
+        margin-top: 5vw;
+
+    }
+
+    .join {
+
+
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .join_box {
+
+        margin-top: 5vw;
+        height: 5vw;
+        width: 30vw;
+        background-color: #EDA822;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        text-align: center;
+
+
+    }
+
+    .join_text {
+
         display: inline-block;
-        vertical-align: top;
-        margin-right: 90px;
-        height: 110px;
-        line-height: 80px;
-        margin-top: 110px;
-        margin-left: 50px;
-        text-decoration: none;
-        color: black;
-        font-size: 0.8em;
+
+
     }
 
     .history {
 
-        display: flex;
-        flex-wrap: wrap;
-        padding: 20vw;
+        Display: flex;
+        Flex-wrap: wrap;
+
+        align-items: center;
+        width: 100%;
 
 
     }
 
-    .boss {}
+    .boss {
+        flex-basis: 200px;
+        flex-grow: 1;
+        padding: 8vw;
 
-    .dolcefar {}
+    }
 
-    footer {}
+    .dolcefar {
+
+        flex-basis: 300px;
+        flex-grow: 1;
+        padding: 8vw;
+        line-height: 30px;
+
+
+    }
+
+    .info {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        color: white;
+        font-family: Lucida Calligraphy;
+        justify-content: space-around;
+
+    }
+
+    footer {
+
+        height: 60vh;
+        width: 100%;
+        background: #05131F;
+        text-align: center;
+        padding-top: 5vw;
+    }
+
+    .cover {
+
+        margin-top: 2vw;
+
+    }
+
+
+    @media only screen and (max-width: 600px) {
+        footer {
+            height: 80vh;
+
+        }
+
+        .open {
+
+            margin-top: 7vw;
+            padding: 2vw;
+
+
+        }
+
+        .adress {
+
+            padding: 2vw;
+
+        }
+    }
+
+
+
+    @media only screen and (max-width: 768px) {
+        .boss {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+
+
+        }
+
+        .citat {
+
+            font-size: 2vw;
+
+        }
+
+        .join_box {
+
+            font-size: 1.5vw;
+            padding-bottom: 2vw;
+
+        }
+
+        .dolcefar {
+            font-size: 2.5vw;
+
+
+        }
+
+    }
+
+
+
+    @media only screen and (max-width: 365px) {
+        .boss {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+
+
+        }
+
+    }
 </style>
 
 <body>
 
     <header>
 
-        <nav class="navigation-bar">
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-align-justify"></i>
+            </span>
             <img class="logo" src="logoweb.svg">
-            <a href="forside.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="#">Wine</a>
-            <a href="#">Contact</a>
-            <a href="#">Join us for dinner!</a>
-        </nav>
+            <ul class="main-nav" id="js-menu">
 
+
+                <li>
+                    <a href="forside.html" class="nav-links">Home</a>
+                </li>
+                <li>
+                    <a href="menu.html" class="nav-links">Menu</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links">Wine</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links">Contact</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links">Join us for dinner!</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
 
@@ -85,10 +360,29 @@
 
     </section>
 
+    <section>
+
+
+        <div class="citat">
+
+            <h1>Il dolce far niente </h1>
+            <p>‘The sweetness of doing nothing’ </p>
+
+        </div>
+
+        <div class="join">
+            <div class="join_box">
+                <div class="join_text">
+                    <h3>Join us for dinner!</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <main>
         <div class="history">
-            <img class="boss" src="boss.png">
+            <div class="boss"><img src="boss.png" alt="boss"> </div>
             <p class="dolcefar">Dolce far niente is a way of life. We, the Italians, live to celebrate with good wine and a plate of pasta, no matter whether it is a normal everyday lunch or the most important holiday in the country. Dolce far niente is a way of thinking always fixed to the moment, in which we can finally ‘do nothing’ and enjoy it.
 
                 Dolce far niente is this sensation when you sit at a bar in an Italian village while you drink coffee and watch the passersby. Time slows and for half a second you admire life in its simplicity, and you only want to smile.</p>
@@ -98,11 +392,51 @@
 
 
     <footer>
+        <div class="info">
 
 
+            <div class="adress">
+                <h2>Info</h2>
+
+                <p>Via del Leone, 4, 00186 Roma RM,<br> Italy<br><br>
+
+                    Tlf.: +45 03 39 49 30</p>
+            </div>
+
+
+            <div class="open">
+                <h2>Opening Hours</h2>
+
+                <p>Monday-thursday<br>
+                    17:30 – 01:00<br>
+                    Kitchen closes 10 pm<br><br>
+
+                    Friday + Saturday<br>
+                    17.30 – 01:00<br>
+                    Kitchen closes 11 pm<br><br>
+
+
+                    Sunday<br>
+                    17:30 – 01:00<br>
+                    Kitchen closes 10 pm</p>
+
+            </div>
+        </div>
 
     </footer>
 
+    <script>
+        let mainNav = document.getElementById('js-menu');
+
+        let navBarToggle = document.getElementById('js-navbar-toggle');
+
+
+        navBarToggle.addEventListener('click', function() {
+
+            mainNav.classList.toggle('active');
+
+        });
+    </script>
 
 
 </body>
