@@ -11,6 +11,8 @@
         .menu {
             text-align: center;
             margin-bottom: 3vw;
+            margin-top: 2vw;
+
 
         }
 
@@ -19,9 +21,9 @@
             font-family: Lucida Calligraphy;
             padding: 1vw 1.5vw 1vw 1.5vw;
             border: solid 0.1vw #343333;
-            height: 3vh;
-            width: 14vw;
-            margin: 2.5vw;
+
+            width: 16vw;
+            margin: 1.7vw;
 
         }
 
@@ -64,16 +66,30 @@
 
             font-family: Lucida Calligraphy;
             font-size: 2em;
-            color: white;
+            color: #000000;
+
+        }
+
+        h4 {
+            font-family: Lucida Calligraphy;
+            color: #ffffff;
+            margin: 2vw;
+
 
         }
 
         p {
 
             font-family: Lucida Calligraphy;
-            color: white;
+            color: #000000;
             margin: 2vw;
 
+
+        }
+
+        .valgt {
+
+            background-color: orange;
 
         }
 
@@ -106,7 +122,7 @@
 
         #popup {
 
-            background-color: #e5e5be;
+            background-color: #ffffdb;
             display: none;
             text-align: center;
             position: absolute;
@@ -120,7 +136,7 @@
 
         #indhold {
 
-            background-color: #e5e5be;
+            background-color: #ffffdb;
             margin: auto;
             padding-right: 15vw;
             padding-left: 15vw;
@@ -141,8 +157,8 @@
         #luk button {
             font-size: 1.5em;
             padding-top: 2vw;
-            background-color: #e5e5be;
-            color: white;
+            background-color: #ffffdb;
+            color: rgba(0, 0, 0, 0.76);
 
         }
 
@@ -164,6 +180,9 @@
             font-size: 1.2em;
         }
 
+
+
+
         .main-nav {
             list-style-type: none;
             display: none;
@@ -171,6 +190,7 @@
             background-color: white;
             z-index: 1;
         }
+
 
         .nav-links,
         .logo {
@@ -185,11 +205,14 @@
             display: inline-block;
             vertical-align: top;
             height: 90px;
+
             margin-left: 40vw;
             text-decoration: none;
             color: black;
 
         }
+
+
 
         .logo {
 
@@ -219,24 +242,27 @@
         @media screen and (min-width: 1024px) {
             .navbar {
                 display: flex;
-                justify-content: space-between;
                 padding-bottom: 0;
                 height: 250px;
                 align-items: center;
+
 
             }
 
             .main-nav {
                 display: flex;
                 flex-direction: row;
-                justify-content: flex-end;
-                margin-left: 24vw;
+                margin-left: 33vw;
                 margin-top: 6vw;
+                width: 70vw;
             }
 
             .main-nav li {
-                margin: 5vw;
+                margin: 3.2vw;
             }
+
+
+
 
             .nav-links {}
 
@@ -346,8 +372,10 @@
                 display: flex;
                 flex-wrap: wrap;
                 width: 80vw;
+
                 margin-left: auto;
                 margin-right: auto;
+
 
             }
 
@@ -356,7 +384,7 @@
                 font-family: Lucida Calligraphy;
                 padding: 1vw 1.5vw 1vw 1.5vw;
                 border: solid 0.1vw #343333;
-                height: 5vh;
+                height: 7vh;
                 width: 6vw;
                 margin: 3.5vw;
                 flex-basis: 400px;
@@ -371,13 +399,14 @@
                 background-color: rgb(0, 0, 0);
                 display: flex;
                 flex-wrap: wrap;
+                font-size: 3vw;
+
 
 
             }
 
 
         }
-
     </style>
 </head>
 
@@ -430,7 +459,7 @@
     <div class="menu">
         <button class="filter" data-hold="alle">Tutti</button>
         <button class="filter" data-hold="antipasti">Antipasti</button>
-        <button class="filter" data-hold="mains">Piatti Tipici</button>
+        <button class="filter" data-hold="mains">Piatti Tradizionali</button>
         <button class="filter" data-hold="dolce">Dolce</button>
         <button class="filter" data-hold="bevande">Bevande</button>
     </div>
@@ -478,8 +507,8 @@
 
 <img src="pngbacio/${eachRetter.billede}.png" alt="${eachRetter.navn}">
 <div class="vis"><h2>${eachRetter.navn}</h2>
-<p>${eachRetter.kort}</p>
-<p>Pris - ${eachRetter.pris}</p><br><br>
+<h4>${eachRetter.kort}</h4>
+<h4>${eachRetter.pris}</h4><br><br>
 
     </article>`;
                         dest.insertAdjacentHTML("beforeend", template);
@@ -490,7 +519,7 @@
                         function åbn() {
                             document.querySelector("#indhold").innerHTML =
                                 `<article class="retter">
-<h3>${eachRetter.navn}</h3>
+<h3>${eachRetter.navn}</h3><br><br>
 <img src="pngbacio/${eachRetter.billede}.png" alt="${eachRetter.navn}">
 
 
@@ -531,7 +560,6 @@
 
             getJson()
         }
-
     </script>
 
 
